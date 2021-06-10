@@ -25,6 +25,11 @@ p{
 
 
 }
+hr{
+    background-color: red;
+    color: red;
+    border-bottom: 1px solid red;
+}
 h1{
     color:#aabbcc; /*  property : value */
 }
