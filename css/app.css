@@ -23,7 +23,6 @@ p{
 
     background-color: #78efc7;
 
-
 }
 hr{
     background-color: red;
@@ -35,4 +34,7 @@ h1{
 }
 a{
     text-decoration: none;
+}
+span{
+    color:orange;
 }
