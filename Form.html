@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Layout</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/layout.css" type="text/css"/>
+    <link rel="stylesheet" href="css/form.css" type="text/css">
+</head>
+<body>
+<header class="header section">
+    <div class="container">
+        <div class="logo">
+            <a href="#">Genesis Framework</a>
+            <p>Support HTML5 & Responsive Design</p>
+        </div>
+        <div class="toplinks">
+            <ul>
+                <li><a href="#">Sample</a> </li>
+                <li><a href="#">Layout</a> </li>
+                <li><a href="#">Template</a> </li>
+                <li><a href="#">Contact</a> </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<nav class="nav section">
+    <div class="container">
+        <ul class="menu">
+            <li><a href="#">Category #1</a> </li>
+            <li><a href="#">Category #2</a> </li>
+            <li><a href="#">Category #3</a> </li>
+            <li><a href="#">Category #4</a> </li>
+        </ul>
+        <div class="mernu-right">
+            <a href="#">Get Genesis now</a>
+        </div>
+    </div>
+</nav>
+<section class="main section">
+    <div class="container">
+        <article class="content">
+            <h1>Form servey</h1>
+            <form action="#" method="get">
+                <input type="text" name="fullname" placeholder="Fullname.." required/>
+                <input type="email" name="email" placeholder="Email .."  required/>
+                <input type="number" name="age" placeholder="Age.."  required/>
+                <input type="tel" name="telephone" placeholder="Telephone.."  required/>
+                <input type="date" name="birthday" placeholder="Birthday.."/>
+                <input type="time" name="timer" placeholder="Timer.."/>
+
+                <label><input type="radio" name="gender" value="nam"/>Nam</label>
+                <label><input type="radio" name="gender" value="nữ"/>Nữ</label>
+                <label><input type="checkbox" name="agree" /> Bạn đồng ý</label>
+
+                <input type="color" name="mycolor"/>
+                <input type="range" min="0" max="100"/>
+
+                <textarea rows="10" cols="100" name="description" placeholder="Description me..">
+                </textarea>
+
+                <select name="city">
+                    <option value="hanoi">Hà Nội</option>
+                    <option value="sg">Sài Gòn</option>
+                    <option value="dn">Đà Nẵng</option>
+                    <option value="ct">Cần Thơ</option>
+                    <option value="hp">Hải Phòng</option>
+                </select>
+                <button type="submit">Submit</button>
+                <button type="button">Button</button>
+                <button type="reset">Reset</button>
+            </form>
+
+        </article>
+        <aside class="sidebar">
+            <div class="box first">
+                Email Newsletter
+            </div>
+            <div class="box social">
+                Social icon
+            </div>
+            <div class="box search">
+                Search
+            </div>
+        </aside>
+    </div>
+</section>
+<footer class="footer section">
+    <div class="container">
+
+    </div>
+</footer>
+</body>
+</html>
