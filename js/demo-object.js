@@ -48,7 +48,8 @@ var humans = [];
 for (var i=0;i<10;i++){
     humans.push(Object.create(obj1));
 }
-
+// http://cdn.23h.com.vn/image/dtvn.png
+//  /images/dtvn.png
 /*
  Định nghĩa 1 dạng object cho sản phẩm gồm các thông tin: tên, ảnh sp, mô tả, giá, số lượng, danh mục (đối tượng)
  và các hành vi:
@@ -57,3 +58,62 @@ for (var i=0;i<10;i++){
  - tăng số lượng sản phẩm
  - điều chỉnh giá sp
  */
+
+var cart = [];
+var product = {
+    id:1,
+    name:"Product Name",
+    image: "/images/product.png",
+    description: "Product Description",
+    price: 0,
+    qty: 1,
+    category:{
+        name: "Category Name",
+        image: "/images/category.png"
+    },
+    addToCart: function (){
+        // can cho this vao trong cart
+        // nếu sản phẩm đã có trong giỏ hàng thì sao
+        // nếu sản phẩm hết hàng thì sao
+        if(this.qty == 0){ // het hang
+            console.log("Out of stock");
+        }else{
+            if(checkCart(this)){/// kt xem sp da co trong gio hang hay chua
+                for(var i=0;i<cart.length;i++){
+                    if(cart[i].id == this.id){
+                        cart[i].qty++;
+                        this.qty = this.qty -1;
+                    }
+                }
+            }else{
+                cart.push(this);
+                this.qty = this.qty-1;
+            }
+        }
+    },
+    removeFromCart: function (){
+        if(checkCart(this)){
+            for(var i=0;i<cart.length;i++){
+                if(cart[i].id == this.id){
+                    this.qty = this.qty + cart[i].qty;
+                    cart.splice(i,1);
+                }
+            }
+        }
+    },
+    changeStock: function (num){
+        this.qty += num;
+        this.qty = this.qty > 0?this.qty:0; // để ko có chuyện số lượng bị âm
+    },
+    changePrice: function (change){
+        this.price += change;
+        this.price = this.price > 0? this.price:0;
+    }
+};
+
+function checkCart(p){
+    for(var i=0;i<cart.length;i++){
+        if(cart[i].id == p.id) return true;
+    }
+    return false;
+}
