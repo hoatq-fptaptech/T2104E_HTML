@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+<body>
+<h1 onmouseenter="demo_2()" onmouseleave="demo_3()" onmouseover="demo_2()" onmouseout="demo_3()">Demo Event trong JS</h1>
+<button type="button" onclick="demo_1()">Nhấn vào đây để xem thông tin</button>
+<h2 ondblclick="demo_4()">Nhấn đúp chuột vào đây</h2>
+
+<input onkeydown="textInput(this)" oncopy="copy()" oncut="cut()" onpaste="paste()" type="text" name="inputdemo" placeholder="Enter a text..."/>
+
+<select name="city" onchange="changeSelect(this)">
+    <option value="HN">Ha Noi</option>
+    <option value="SG">Sai Gon</option>
+    <option value="CT">Can Tho</option>
+</select>
+<h2>Nhập vào thời gian đếm ngược</h2>
+<input name="timer" onkeypress="timerCountdown(this)" min="1" placeholder="Timer.." type="number"/>
+<h2>
+    <span id="box-min" class="bg-success">00</span>
+    <span class="bg-success">:</span>
+    <span id="box-sec" class="bg-success">00</span>
+</h2>
+<script src="js/demo_event.js"></script>
+</body>
+</html>
