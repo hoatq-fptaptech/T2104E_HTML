@@ -93,13 +93,64 @@ var reward  = [
     "Lamboghini v8",
     "SH 150i",
     "Honda Dream",
+    "Honda Dream",
+    "Tủ lạnh Toshiba",
+    "Tủ lạnh Toshiba",
     "Tủ lạnh Toshiba",
     "Chuột máy tính Fuhlen",
-    "Bút bi Thiên long"
+    "Chuột máy tính Fuhlen",
+    "Chuột máy tính Fuhlen",
+    "Chuột máy tính Fuhlen",
+    "Chuột máy tính Fuhlen",
+    "Chuột máy tính Fuhlen",
+    "Chuột máy tính Fuhlen",
+    "Chuột máy tính Fuhlen",
+    "Chuột máy tính Fuhlen",
+    "Chuột máy tính Fuhlen",
+    "Chuột máy tính Fuhlen",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
+    "Bút bi Thiên long",
 ]
+//alert(reward[4]);
 // cần tạo 1 button nhấn vào để chọn phần thưởng ngẫu nhiên trong các phần thưởng trên
 // thời gian quay là 10s ( tức là khi nhấn vào nó sẽ đổi liên tục quà trong 10s, cái nào
 // cuối cùng mới là phần quà chính thức
 // Sau đó in ra thông báo trên 1 thẻ h2 ( span...) món quà nhận được
 
 // Math.random()
+function chonQua(){
+    var count = 50;
+    var timer = setInterval(function (){
+        // chon qua ngau nhieu tu danh sach
+        var i = Math.random()*40;
+        i = parseInt(i);// 1 số ngẫu nhiên trong danh sach
+        // in ra kết quả
+        var kq = document.getElementById("ketqua");
+        kq.innerText = "Món quà nhận được: "+reward[i];
+        // chuyển đến lần chọn tiếp theo
+        count--;
+        if(count <=0){
+            clearInterval(timer);
+        }
+    },50);
+}
