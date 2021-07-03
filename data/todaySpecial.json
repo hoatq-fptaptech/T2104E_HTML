@@ -1,0 +1,47 @@
+{
+  "message": "success",
+  "data": [
+    {
+      "id": 23,
+      "name": "Pepsi không Calories vị chanh_dạng lon (Pepsi Zero",
+      "image": "https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/584039753b87a8d227764e04fc461e3e/z/2/z2054228259338_f983ac7b886fccbe1772ccc551532ca2_1.jpg",
+      "description": "",
+      "price": 18000
+    },
+    {
+      "id": 8,
+      "name": "Burger Bò Teriyaki (Teriyaki Burger)",
+      "image": "https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/584039753b87a8d227764e04fc461e3e/t/e/teriyaki-burger_4.png",
+      "description": "",
+      "price": 31000
+    },
+    {
+      "id": 21,
+      "name": "Cơm Gà Nướng Góc Tư (Grilled Chicken Quater Leg Rice)",
+      "image": "https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/584039753b87a8d227764e04fc461e3e/c/_/c_m_g_n_ng_g_c_t_.png",
+      "description": "",
+      "price": 58000
+    },
+    {
+      "id": 29,
+      "name": "Mì sốt kem gà viên (Scream Spaghetti)",
+      "image": "https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/584039753b87a8d227764e04fc461e3e/m/_/m_s_t_kem_g_vi_n.jpg",
+      "description": "",
+      "price": 45000
+    },
+    {
+      "id": 5,
+      "name": "Burger Cá (Fish Burger)",
+      "image": "https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/584039753b87a8d227764e04fc461e3e/b/u/burger_fish_5.png",
+      "description": "",
+      "price": 34000
+    },
+    {
+      "id": 11,
+      "name": "Gà nướng - 3 miếng (Grilled Chicken - 3 Pcs)",
+      "image": "https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/584039753b87a8d227764e04fc461e3e/g/_/g_n_ng_s_t_hs_s_cay_3_6_9_mi_ng.jpg",
+      "description": "",
+      "price": 107000
+    }
+  ]
+}

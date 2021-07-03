@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS 4</title>
+</head>
+<body>
+    <h1 id="title">Tiêu đề bài báo</h1>
+<p class="pg">Bệnh nhân 17947 (60 tuổi) khai cách nay khoảng 1 tuần có tiếp xúc với một người ở ấp Hội Xuân, xã An Hiệp, huyện Châu Thành. Từ ngày 17 đến 29-6, bệnh nhân ở tại nhà. Ngày 30-6, bệnh nhân 17947 bị ho, sốt nên được cháu đưa đi khám bệnh ở phòng khám tư nhân ở Cái Tàu Hạ, huyện Châu Thành. Đến ngày 1-7, bệnh nhân 17947 đến bệnh viện Cái Tàu Hạ để xin test nhanh Covid-19 và được hướng dẫn bữa sau quay lại. Sáng 2-7, cháu tiếp tục chở bệnh nhân đến Bệnh viện Đa khoa Xuyên Á (Vĩnh Long) để làm test nhanh và cho kết quả dương tính SARS-CoV-2.</p>
+<p class="pg">Bệnh nhân 17948 (31 tuổi): Ngày 5-6, bệnh nhân từ quận 12, TP HCM về Đồng Tháp, có đi ăn với bạn và sau đó ở nhà. Sáng 2-7, bệnh nhân tự đi xe máy từ nhà đến thẳng Bệnh viện Đa khoa Xuyên Á làm xét nghiệm test nhanh và có kết quả dương tính.</p>
+<p class="pg">Bệnh nhân 17949 (66 tuổi) khai từ ngày 18-6 đến nay chỉ ở nhà, không tiếp xúc với người từ tỉnh khác về, không tham gia đám, tiệc đông người. Ngày 30-6, bệnh nhân đi bộ qua đám tang ở cùng ấp. Tại đám tang, bệnh nhân không tiếp xúc với ai, sau khi viếng xong thì đi bộ về nhà. Sáng 1-7, bệnh nhân đến Bệnh viện Đa khoa Xuyên Á làm xét nghiệm, kết quả dương tính.</p>
+
+<script type="text/javascript">
+    var t = document.getElementById("title");// 1 object DOM element
+    t.style.color = "red";
+
+    // var ps = document.getElementsByClassName("pg"); // đây là 1 mảng các phần tử đối tượng DOM element
+    var ps = document.getElementsByTagName("p"); // đây là 1 mảng các phần tử đối tượng DOM element
+    for(var i=0;i<ps.length;i++){
+        ps[i].style.color  = "green";
+    }
+</script>
+</body>
+</html>
