@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment JS 3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+<body>
+    <section class="col-md-12">
+        <div class="container">
+            <h1 id="food-name">Tên món ăn</h1>
+            <img class="img-thumbnail" src="#" id="food-image"/>
+            <h2 id="food-price">gia tien</h2>
+            <p id="food-desc">Mo ta mon an</p>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $.ajax({
+            url:"https://foodgroup.herokuapp.com/api/food/1",
+            method:"GET",
+            success:function (rs){
+                var name = rs.data.name;
+                var img = rs.data.image;
+                var price = rs.data.price;
+                var des = rs.data.description;
+                $("#food-name").text(name); // var f = $("#food-name");f.text(name):
+                $("#food-image").attr("src",img);// chuyeenr gia tri src bang img
+                $("#food-price").text(price);
+                $("#food-desc").text(des);
+            }
+        });
+    </script>
+</body>
+</html>
