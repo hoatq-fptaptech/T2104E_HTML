@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Weather</title>
+</head>
+<body>
+    <h1>Nhiệt độ: <span id="temp"></span><sup>o</sup>C</h1>
+    <h2>Độ ẩm: <span id="hum">62</span>%</h2>
+    <h2>Gió: <span id="wind">13</span>km/h</h2>
+    <h2><span id="city"></span></h2>
+    <p><span id="desc"></span></p>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $.ajax({
+        url:"https://api.openweathermap.org/data/2.5/weather",
+        method:"GET",// GET hay POST do API quyet dinh
+        data:{
+            q:"saigon,vietnam",
+            units:"metric",
+            appid:"09a71427c59d38d6a34f89b47d75975c"
+        },//noi truyen tham so
+        success:function (rs){
+            $("#temp").text(rs.main.temp);
+            $("#hum").text(rs.main.humidity);
+            $("#wind").text(rs.wind.speed);
+            $("#city").text(rs.name+","+rs.sys.country);
+            for(var i=0;i<rs.weather.length;i++){
+                $("#desc").text(rs.weather[i].main+","+rs.weather[i].description);
+            }
+        }
+    })
+    // vi du api post
+    // $.ajax({
+    //     url:"https://foodgroup.herokuapp.com/api/create-order",
+    //     method:"POST",// GET hay POST do API quyet dinh
+    //     data:{
+    //        items:[]
+    //     },//noi truyen tham so
+    //     success:function (rs){
+    //        console.log(rs);
+    //     }
+    // })
+</script>
+</body>
+</html>
